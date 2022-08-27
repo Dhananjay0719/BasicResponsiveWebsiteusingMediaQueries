@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 13px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+/*Header of the Website*/
+header{
+   background-color: #1f282d;
+   color:white;
+   padding-top: 30px;
+   min-height: 70px;
+   border-bottom: 2px solid orangered;
+}
+
+.navbar{
+    float:right;
+}
+
+.navbar ul{
+   list-style: none;    
+}
+
+.navbar ul li{
+    float:left;
+    display:inline;
+    padding:5px 20px 0px 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.navbar a:hover, a:active{
+    color:yellow;
+    text-decoration: underline;
+}
+
+.showcase{
+    min-height: 400px;
+    background: url('../images/bg2.jpg') no-repeat -50px -48px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.logo{
+    float:left;
+}
+
+.query{
+    background-color: #1f282d;
+    color:white;   
+}
+
+.query h1{
+    font-size: 20px;
+    float:left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.query form{
+    float:right;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.query form input[type="email"]{
+    width:250px;
+}
+
+.btn{
+    border: none;
+    color:white;
+    background-color: orangered;
+    padding-left: 20px;
+    padding-right:20px;
+    height:20px;
+}
+
+.box{
+    margin-top:20px;
+}
+
+.box{
+    text-align: center;
+    float:left;
+    width:32%;
+}
+
+.box img{
+    width:150px;
+}
+
+.foot{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    background-color: orangered;
+}
+
+.aboutsite{
+    float:left;
+    width:60%
+}
+
+.aboutdeveloper img{
+    width: 240px;
+    border-radius:1000px;
+}
+
+.aboutdeveloper{
+    float:right;
+    margin-top:30px;
+    width:30%;
+}
+
+/*Media Queries*/
+@media(max-width: 480px){
+   .logo,.query form,.query h1,.box,.aboutdeveloper,.aboutsite{
+    float:none;
+    text-align:center;
+    width:100%;
+   }
+   .navbar {
+    float:none;    
+   }
+   .navbar ul{
+    display:flex;
+   }
+   header{
+    padding-bottom: 20px;
+   }
+   .query button{
+    display: block;
+    width:100%;
+   }
+   .query form input[type="email"]{
+    width: 100%;
+    margin-bottom:5px;
+   }
+}
